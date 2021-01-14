@@ -17,6 +17,16 @@ pipeline {
 					echo "Integration Test"
 				}
 			}
+		} post {
+			always {
+				echo 'Message always printed.'
+			}
+			success {
+				echo 'Message printed when successfull'
+			}
+			failure {
+				echo 'Message printed when fails'
+			}
 		} 
 		
 }
