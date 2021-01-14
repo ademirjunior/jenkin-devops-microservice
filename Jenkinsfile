@@ -17,7 +17,9 @@ pipeline {
 					echo "Integration Test"
 				}
 			}
-		} post {
+		} 
+		
+		post {
 			always {
 				echo 'Message always printed.'
 			}
@@ -28,5 +30,4 @@ pipeline {
 				echo 'Message printed when fails'
 			}
 		} 
-		
 }
